@@ -21,6 +21,7 @@ import { toast } from "sonner";
 import { v4 as uuidv4 } from "uuid";
 
 // Job Role Suggestions
+// Job Role Suggestions
 const JOB_ROLE_SUGGESTIONS = [
   "Full Stack Developer",
   "Frontend Developer",
@@ -32,20 +33,59 @@ const JOB_ROLE_SUGGESTIONS = [
   "Cloud Engineer",
   "Mobile App Developer",
   "UI/UX Designer",
+  "AI Engineer",
+  "Site Reliability Engineer (SRE)",
+  "Security Engineer",
+  "Blockchain Developer",
+  "Game Developer",
 ];
 
-// Tech Stack Suggestions
+// Detailed Tech Stack Suggestions
 const TECH_STACK_SUGGESTIONS = {
-  "Full Stack Developer": "React, Node.js, Express, MongoDB, TypeScript",
-  "Frontend Developer": "React, Vue.js, Angular, TypeScript, Tailwind CSS",
-  "Backend Developer": "Python, Django, Flask, Java Spring, PostgreSQL",
-  "Software Engineer": "Java, C++, Python, AWS, Microservices",
-  "DevOps Engineer": "Docker, Kubernetes, Jenkins, AWS, Azure",
-  "Data Scientist": "Python, TensorFlow, PyTorch, Pandas, NumPy",
-  "Machine Learning Engineer": "Python, scikit-learn, Keras, TensorFlow",
-  "Cloud Engineer": "AWS, Azure, GCP, Terraform, Kubernetes",
-  "Mobile App Developer": "React Native, Flutter, Swift, Kotlin",
-  "UI/UX Designer": "Figma, Sketch, Adobe XD, InVision",
+  "Full Stack Developer":
+    "Frontend: React, Next.js, Vue.js, TypeScript, Tailwind CSS. Backend: Node.js, Express, Django, Spring Boot. Database: MongoDB, PostgreSQL, MySQL. DevOps: Docker, GitHub Actions, CI/CD. Testing: Jest, Cypress.",
+
+  "Frontend Developer":
+    "Languages: JavaScript, TypeScript. Frameworks: React, Next.js, Vue.js, Angular. Styling: Tailwind CSS, SCSS, Styled Components. Tools: Webpack, Vite, ESLint. Testing: Jest, React Testing Library, Cypress.",
+
+  "Backend Developer":
+    "Languages: Node.js, Python, Java, Go, Ruby. Frameworks: Express, Django, Spring Boot, FastAPI, Laravel. Databases: PostgreSQL, MongoDB, Redis, MySQL. APIs: REST, GraphQL. Tools: JWT, OAuth, Docker.",
+
+  "Software Engineer":
+    "Languages: Java, C++, Python, Go, Rust. Principles: OOP, SOLID, Design Patterns. Architecture: Microservices, Monoliths, Event-Driven. Tools: Git, Jenkins, Docker, Agile, Jira. Platforms: Linux, AWS.",
+
+  "DevOps Engineer":
+    "CI/CD: Jenkins, GitHub Actions, GitLab CI. Containers: Docker, Podman. Orchestration: Kubernetes, Helm. Cloud: AWS, Azure, GCP. IaC: Terraform, Ansible. Monitoring: Prometheus, Grafana, ELK Stack.",
+
+  "Data Scientist":
+    "Languages: Python, R. Libraries: Pandas, NumPy, SciPy, Scikit-learn, Matplotlib. Tools: Jupyter Notebook, Google Colab. ML: XGBoost, LightGBM. Data: SQL, Spark, Hadoop. Visualization: Tableau, Power BI.",
+
+  "Machine Learning Engineer":
+    "Languages: Python, C++. Frameworks: TensorFlow, PyTorch, Keras, HuggingFace. Tools: MLflow, DVC, Airflow. Concepts: Deep Learning, MLOps, Model Deployment. Data Handling: Pandas, NumPy, TFData.",
+
+  "Cloud Engineer":
+    "Platforms: AWS, Azure, GCP. Tools: Terraform, Pulumi, CloudFormation. Services: EC2, S3, Lambda, IAM, VPC. Networking: Load Balancers, CDN, DNS. DevOps: CI/CD, Docker, Kubernetes.",
+
+  "Mobile App Developer":
+    "Cross-Platform: React Native, Flutter. Native: Swift (iOS), Kotlin (Android). Backend: Firebase, Supabase. UI: Jetpack Compose, SwiftUI. Tools: Xcode, Android Studio, Expo, Fastlane.",
+
+  "UI/UX Designer":
+    "Design Tools: Figma, Adobe XD, Sketch, InVision. Prototyping: Framer, Marvel. Handoff: Zeplin, Avocode. Skills: Wireframing, User Research, Design Systems, Accessibility, Responsive Design.",
+
+  "AI Engineer":
+    "Languages: Python, Julia. Frameworks: TensorFlow, PyTorch, OpenCV, HuggingFace. Concepts: NLP, CV, Transformers, Reinforcement Learning. Tools: MLflow, ONNX, NVIDIA CUDA.",
+
+  "Site Reliability Engineer (SRE)":
+    "Monitoring: Prometheus, Grafana, Datadog. Logging: ELK, Fluentd. Reliability: SLAs, SLOs, SLIs. Tools: Kubernetes, Terraform, PagerDuty. Languages: Go, Bash, Python. CI/CD: Jenkins, ArgoCD.",
+
+  "Security Engineer":
+    "Tools: Wireshark, Metasploit, Burp Suite, Nessus. Concepts: Threat Modeling, Pen Testing, Secure Coding. Languages: Python, Bash, C. Security: OAuth, SSL, JWT. Monitoring: SIEM, IDS/IPS.",
+
+  "Blockchain Developer":
+    "Languages: Solidity, Rust, JavaScript. Platforms: Ethereum, Solana, Polygon. Tools: Hardhat, Truffle, Ganache. Libraries: web3.js, ethers.js. Concepts: Smart Contracts, DApps, IPFS, DeFi.",
+
+  "Game Developer":
+    "Engines: Unity (C#), Unreal (C++). Graphics: OpenGL, DirectX, Blender. Tools: Photon, Godot, Git LFS. Concepts: Game Physics, AI, Animation, Networking. Platforms: PC, Console, Mobile.",
 };
 
 function AddNewInterview() {
